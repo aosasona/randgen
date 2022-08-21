@@ -11,10 +11,17 @@
 </head>
 <body class="bg-neutral-900">
 <main class="w-full h-auto lg:h-screen">
-    <h2 class="w-min h-min text-sm lg:text-sm font-semibold bg-indigo-500 px-5 py-2 mx-5 mt-6 lg:mx-6 rounded-3xl lg:rounded-3xl">RandGen</h2>
+    <nav class="flex justify-between items-center mx-5 mt-6 lg:mx-6">
+    <h2 class="w-min h-min text-sm lg:text-sm font-semibold bg-indigo-500 px-5 py-2 rounded-3xl lg:rounded-3xl">RandGen</h2>
+        <p class="text-xs text-indigo-100 font-semibold px-2">@data(ip_address)</p>
+    </nav>
     <section class="w-[90vw] lg:w-3/5 px-5 py-8 lg:px-7 lg:py-4 mx-auto">
-        <h1 class="text-center text-4xl lg:text-7xl font-bold my-[8vh] lg:my-[12vh]">Generate <span class="text-indigo-500">random</span> encryption keys easily</h1>
-
+        <div class="flex flex-col gap-6 my-[8vh] lg:my-[12vh]">
+        <div class="fixed bottom-0 right-0 left-0 w-max mx-auto bg-orange-500 text-orange-400 font-medium text-opacity-60 bg-opacity-40 text-center text-xs px-6 py-2 lg:px-6">
+            No data is collected, logged or stored
+        </div>
+        <h1 class="text-center text-4xl lg:text-7xl font-bold">Generate <span class="text-indigo-500">random</span> encryption keys easily</h1>
+        </div>
         <form id="form">
             <div class="flex justify-between w-full lg:w-1/3 2xl:w-2/5 mx-auto bg-indigo-200 p-2 rounded-[2rem]">
             <input type="number" id="keylength"
@@ -26,7 +33,7 @@
         </form>
     </section>
 
-    <footer class="mt-[20vh]">
+    <footer class="mt-[15vh] mb-[5vh]">
         <p class="text-xs text-center">
         Built by <a href="https://github.com/aosasona" class="text-indigo-500 underline underline-offset-4">Ayodeji</a>
         </p>

@@ -12,6 +12,7 @@ $router = new Router(__DIR__ . "/src", "");
 $router->allowed(["text/html", "multipart/form-data", "application/x-www-form-urlencoded"]);
 
 $router->get("/", function (Request $request, Response $response) {
+    $request->append("ip_address", $_SERVER['SERVER_ADDR']);
     return $response->use_engine()->render("Views/home.html", $request);
 });
 
