@@ -1,12 +1,12 @@
-<div class="fixed left-0 right-0 mx-auto flex flex-col bottom-10 w-[90vw] lg:w-2/5 bg-neutral-800 gap-3 drop-shadow-xl px-4 pb-6 rounded-3xl z-[999] slide-up"
+<div class="fixed left-0 right-0 mx-auto flex flex-col bottom-8 w-[90vw] lg:w-1/4 bg-neutral-800 gap-3 drop-shadow-xl px-4 pb-6 rounded-3xl z-[999] slide-up"
      id="modal">
-    <h2 class="text-center font-semibold text-neutral-500 pt-5 pb-1">Generated</h2>
-    <hr class="opacity-30"/>
+    <h2 class="text-center text-lg font-semibold text-neutral-500 pt-5 pb-1">Generated</h2>
+    <hr class="opacity-20"/>
     <div id="generated-output"
          class="bg-indigo-700 bg-opacity-10 text-sm text-indigo-400 mb-3 py-4 px-3 rounded-lg break-all"></div>
-    <div class="flex items-center w-full gap-3">
-        <button type="button" class="w-full text-xs bg-indigo-500 py-3 rounded-2xl" id="copy-result">Copy</button>
-        <button type="button" class="w-full text-xs bg-transparent text-neutral-400 py-3 rounded-2xl" id="close-modal"
+    <div class="grid grid-cols-2 items-center w-full gap-3">
+        <button type="button" class="w-full block text-xs bg-indigo-500 py-3 rounded-2xl hover:scale-95 transition-all" id="copy-btn">Copy</button>
+        <button type="button" class="w-full block text-xs bg-transparent bg-opacity-40 text-neutral-400 py-3 rounded-2xl hover:scale-95 transition-all" id="close-modal"
                 onclick="closeModal()">Cancel
         </button>
     </div>

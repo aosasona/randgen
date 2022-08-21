@@ -5,7 +5,16 @@ const generatedOutput = document.getElementById("generated-output");
 const modalContainer = document.getElementById('modal-container');
 const modalBlur = document.getElementById('modal-blur');
 const modal = document.getElementById('modal');
+const copyBtn = document.getElementById('copy-btn');
 
+copyBtn.onclick = () => {
+    const result = generatedOutput.innerText;
+    navigator.clipboard.writeText(result).then(() => {
+        alert("Copied to clipboard!");
+    }).catch(err => {
+        alert("Could not copy to clipboard");
+    })
+}
 
 form.onsubmit = async (e) => {
     e.preventDefault();
