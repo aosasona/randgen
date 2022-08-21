@@ -1,0 +1,11 @@
+<div class="fixed left-0 right-0 mx-auto flex flex-col bottom-10 w-[90vw] lg:w-2/5 bg-neutral-800 gap-3 drop-shadow-xl px-4 pb-6 rounded-3xl z-[999] slide-up" id="modal">
+    <h2 class="text-center font-semibold text-neutral-500 pt-5 pb-1">Generated</h2>
+    <hr class="opacity-30" />
+    <div id="generated" class="bg-indigo-700 bg-opacity-10 text-sm text-indigo-400 mb-3 py-4 px-3 rounded-lg break-all"></div>
+    <div class="flex items-center w-full gap-3">
+    <button type="button" class="w-full text-xs bg-indigo-500 py-3 rounded-2xl" id="copy-result">Copy</button>
+    <button type="button" class="w-full text-xs bg-transparent text-neutral-400 py-3 rounded-2xl" id="close-modal" onclick="closeModal()">Cancel</button>
+    </div>
+</div>
+
+<div class="fixed w-screen h-screen top-0 left-0 bg-neutral-800 bg-opacity-30 backdrop-blur-lg z-[99] fade-in" id="modal-blur" onclick="closeModal()"></div>

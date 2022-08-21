@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "fb55f78e35fad4de04743749a79c1f97",
+    "content-hash": "29d4543652f704ab32e1a4aeebbd6054",
     "packages": [
         {
             "name": "trulyao/php-router",
@@ -64,9 +64,7 @@
     "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": {
-        "ext-pdo": "*"
-    },
+    "platform": [],
     "platform-dev": [],
     "plugin-api-version": "2.3.0"
 }

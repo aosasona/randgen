@@ -1,23 +1,19 @@
 {
-  "name": "trulyao/randgen",
-  "description": "A PHP starter project",
-  "type": "template",
-  "require": {
-    "trulyao/php-router": "^2.0",
-    "ext-pdo": "*"
-  },
-  "license": "MIT",
-  "autoload": {
-    "psr-4": {
-      "Trulyao\\RandGen\\": "src/"
+    "name": "trulyao/randgen",
+    "description": "Generate random strings for passwords and encryption keys",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Trulyao\\Randgen\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Ayodeji O"
+        }
+    ],
+    "require": {
+        "trulyao/php-router": "^2.0"
     }
-  },
-  "authors": [
-    {
-      "name": "Ayodeji O.",
-      "email": "ayodejiosasona@icloud.com"
-    }
-  ],
-  "scripts": {
-  }
 }
