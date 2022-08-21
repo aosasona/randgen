@@ -5,9 +5,8 @@ const generatedOutput = document.getElementById("generated-output");
 const modalContainer = document.getElementById('modal-container');
 const modalBlur = document.getElementById('modal-blur');
 const modal = document.getElementById('modal');
-const copyBtn = document.getElementById('copy-btn');
 
-copyBtn.onclick = () => {
+const copyResult = () => {
     const result = generatedOutput.innerText;
     navigator.clipboard.writeText(result).then(() => {
         alert("Copied to clipboard!");
